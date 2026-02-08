@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/precioText"
+        style="@style/MyTextStyle"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="128dp"
+        android:text="@string/precio"
+        app:layout_constraintBottom_toBottomOf="@id/precioSeekBar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/precioView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/precioView"
+        style="@style/MyTextViewStyle"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="128dp"
+        android:text="0 €"
+        app:layout_constraintBottom_toBottomOf="@id/precioSeekBar"
+        app:layout_constraintLeft_toLeftOf="@+id/precioText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <SeekBar
+        android:id="@+id/precioSeekBar"
+        style="@style/MySeekBarStyle"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toBottomOf="@id/ahorroText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/precioText"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/ahorroText"
+        style="@style/MyTextStyle"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/ahorro"
+        app:layout_constraintBottom_toBottomOf="@id/ahorroSeekBar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/ahorroView"
+        app:layout_constraintTop_toTopOf="@id/precioSeekBar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/ahorroView"
+        style="@style/MyTextViewStyle"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="48dp"
+        android:text="0 %"
+        app:layout_constraintBottom_toBottomOf="@id/ahorroSeekBar"
+        app:layout_constraintLeft_toLeftOf="@+id/ahorroText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/precioSeekBar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <SeekBar
+        android:id="@+id/ahorroSeekBar"
+        style="@style/MySeekBarStyle"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toBottomOf="@id/minimoAhorroText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ahorroText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/minimoAhorroText"
+        style="@style/MyTextStyle"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="32dp"
+        android:text=""
+        android:textColor="@color/Crimson"
+        android:textSize="36px"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@id/interesText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ahorroSeekBar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/interesText"
+        style="@style/MyTextStyle"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/interes"
+        app:layout_constraintBottom_toBottomOf="@id/interesSeekBar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/interesView"
+        app:layout_constraintTop_toTopOf="@id/minimoAhorroText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/interesView"
+        style="@style/MyTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="64dp"
+        android:text="0 %"
+        app:layout_constraintBottom_toBottomOf="@id/interesSeekBar"
+        app:layout_constraintLeft_toLeftOf="@+id/interesText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/minimoAhorroText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <SeekBar
+        android:id="@+id/interesSeekBar"
+        style="@style/MySeekBarStyle"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toBottomOf="@id/plazoText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/interesText"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/plazoText"
+        style="@style/MyTextStyle"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/plazo"
+        app:layout_constraintBottom_toBottomOf="@id/plazoSeekBar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/plazoView"
+        app:layout_constraintTop_toTopOf="@id/interesSeekBar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/plazoView"
+        style="@style/MyTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="48dp"
+        android:text="0 años"
+        app:layout_constraintBottom_toBottomOf="@id/plazoSeekBar"
+        app:layout_constraintLeft_toLeftOf="@+id/plazoText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/interesSeekBar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <SeekBar
+        android:id="@+id/plazoSeekBar"
+        style="@style/MySeekBarStyle"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toBottomOf="@id/calcularButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/plazoText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/calcularButton"
+        style="@style/MyButtonStyle"
+        android:onClick="onCalculate"
+        android:text="@string/calcular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/plazoSeekBar"
+        app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

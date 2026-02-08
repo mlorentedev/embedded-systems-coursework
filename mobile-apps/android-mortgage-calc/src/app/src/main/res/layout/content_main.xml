@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="128dp"
+    android:paddingBottom="128dp"
+    >
+    <TextView
+        android:id="@+id/precioText"
+        style="@style/MyTextStyle"
+        android:text="@string/precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toRightOf="@+id/precioView"
+        />
+
+    <TextView
+        android:id="@+id/precioView"
+        style="@style/MyTextViewStyle"
+        android:text="0 €"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+    />
+    <SeekBar
+        android:id="@+id/precioSeekBar"
+        style="@style/MySeekBarStyle"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/precioText"
+        />
+
+    <TextView
+        android:id="@+id/ahorroText"
+        style="@style/MyTextStyle"
+        android:text="@string/ahorro"
+        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toRightOf="@+id/ahorroView"
+        android:layout_below="@id/precioSeekBar"
+        />
+
+    <TextView
+        android:id="@+id/ahorroView"
+        style="@style/MyTextViewStyle"
+        android:text="0 %"
+        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/precioSeekBar"
+        />
+
+    <SeekBar
+        android:id="@+id/ahorroSeekBar"
+        style="@style/MySeekBarStyle"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/ahorroText"
+ />
+
+    <TextView
+        android:id="@+id/minimoAhorroText"
+        style="@style/MyTextStyle"
+        android:text=""
+        android:textColor="@color/Crimson"
+        android:textSize="36px"
+        android:textStyle="normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/ahorroSeekBar"
+        />
+
+    <TextView
+        android:id="@+id/interesText"
+        style="@style/MyTextStyle"
+        android:text="@string/interes"
+        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toRightOf="@+id/interesView"
+        android:layout_below="@+id/minimoAhorroText"
+/>
+
+    <TextView
+        android:id="@+id/interesView"
+        style="@style/MyTextViewStyle"
+        android:text="0 %"
+        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/minimoAhorroText"
+ />
+
+    <SeekBar
+        android:id="@+id/interesSeekBar"
+        style="@style/MySeekBarStyle"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/interesText"
+/>
+
+    <TextView
+        android:id="@+id/plazoText"
+        style="@style/MyTextStyle"
+        android:text="@string/plazo"
+        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toRightOf="@+id/plazoView"
+        android:layout_below="@+id/interesSeekBar"
+/>
+
+    <TextView
+        android:id="@+id/plazoView"
+        style="@style/MyTextViewStyle"
+        android:text="0 años"
+        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/interesSeekBar"
+/>
+
+    <SeekBar
+        android:id="@+id/plazoSeekBar"
+        style="@style/MySeekBarStyle"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/plazoText"
+ />
+
+    <Button
+        android:id="@+id/calcularButton"
+        style="@style/MyButtonStyle"
+        android:onClick="onCalculate"
+        android:text="@string/calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+/>
+
+</RelativeLayout>

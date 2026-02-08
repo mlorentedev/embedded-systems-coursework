@@ -1,0 +1,53 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/SteelBlue</item>
+        <item name="colorPrimaryDark">@color/SteelBlue</item>
+        <item name="colorAccent">@color/MediumVioletRed</item>
+    </style>
+
+    <!-- Text objects common style -->
+    <style name="MyTextStyle" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">48px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">32px</item>
+    </style>
+
+    <!-- Text view objects common style -->
+    <style name="MyTextViewStyle" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">48px</item>
+        <item name="android:layout_marginLeft">128px</item>
+        <item name="android:layout_marginTop">32px</item>
+    </style>
+
+    <!-- Seekbar objects common style -->
+    <style name="MySeekBarStyle" parent="AppTheme">
+        <item name="android:layout_width">1000px</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Button objects common style -->
+    <style name="MyButtonStyle" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:textSize">48px</item>
+    </style>
+
+    <!-- Text view output objects common style -->
+    <style name="MyTextViewStyle_2" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">32px</item>
+    </style>
+    <!-- Text view output objects common style -->
+    <style name="MyTextStyle_2" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">32px</item>
+    </style>
+</resources>

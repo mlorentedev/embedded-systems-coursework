@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".OperationActivity"
+    tools:showIn="@layout/activity_operation">
+
+    <TextView
+        android:id="@+id/infoText"
+        style="@style/MyTextStyle"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="128dp"
+        android:text="@string/info"
+        app:layout_constraintBottom_toBottomOf="@+id/totalView"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/totalView"
+        style="@style/MyTextViewStyle_2"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/total_hipoteca"
+        app:layout_constraintBottom_toBottomOf="@id/mensualView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/totalValue"
+        app:layout_constraintTop_toTopOf="@id/infoText"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/totalValue"
+        style="@style/MyTextStyle_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="48dp"
+        android:text="0 €"
+        app:layout_constraintBottom_toBottomOf="@id/mensualValue"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="@id/totalView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/infoText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/mensualView"
+        style="@style/MyTextViewStyle_2"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/mensual"
+        app:layout_constraintBottom_toBottomOf="@id/totalCompraText"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/mensualValue"
+        app:layout_constraintTop_toTopOf="@id/totalView"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/mensualValue"
+        style="@style/MyTextStyle_2"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="32dp"
+        android:text="0 €"
+        app:layout_constraintBottom_toBottomOf="@id/totalCompraValue"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="@id/mensualView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/totalValue"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/totalCompraText"
+        style="@style/MyTextStyle"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="128dp"
+        android:text="@string/total_compra"
+        app:layout_constraintBottom_toBottomOf="@id/totalprecioView"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/totalCompraValue"
+        app:layout_constraintTop_toTopOf="@id/mensualView"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/totalCompraValue"
+        style="@style/MyTextStyle"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="128dp"
+        android:text="0 €"
+        app:layout_constraintBottom_toBottomOf="@id/totalPrecioValue"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="@id/totalCompraText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/mensualValue"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/totalprecioView"
+        style="@style/MyTextViewStyle_2"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/precio"
+        app:layout_constraintBottom_toBottomOf="@id/impuestosView"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/impuestosValue"
+        app:layout_constraintTop_toTopOf="@id/totalCompraText"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/totalPrecioValue"
+        style="@style/MyTextStyle_2"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="48dp"
+        android:text="0 €"
+        app:layout_constraintBottom_toBottomOf="@id/impuestosValue"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@id/totalprecioView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/totalCompraValue"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/impuestosView"
+        style="@style/MyTextViewStyle_2"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/impuestos"
+        app:layout_constraintBottom_toBottomOf="@id/totalText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/impuestosValue"
+        app:layout_constraintTop_toTopOf="@id/totalprecioView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/impuestosValue"
+        style="@style/MyTextStyle_2"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="32dp"
+        android:text="0 €"
+        app:layout_constraintBottom_toBottomOf="@id/totalConHipotecaValue"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@id/impuestosView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/totalPrecioValue"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/totalText"
+        style="@style/MyTextStyle"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="128dp"
+        android:text="@string/total"
+        app:layout_constraintBottom_toBottomOf="@id/totalAhorroView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/totalConHipotecaValue"
+        app:layout_constraintTop_toTopOf="@id/impuestosView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/totalConHipotecaValue"
+        style="@style/MyTextStyle"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="128dp"
+        android:text="0 €"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/ahorroValue"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="@id/totalText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/impuestosValue"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/totalAhorroView"
+        style="@style/MyTextViewStyle_2"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/ahorro"
+        app:layout_constraintBottom_toBottomOf="@id/importeTotalView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/ahorroValue"
+        app:layout_constraintTop_toTopOf="@id/totalText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/ahorroValue"
+        style="@style/MyTextStyle_2"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="48dp"
+        android:text="0 €"
+        app:layout_constraintBottom_toBottomOf="@id/totalHipotecaValue"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="@id/totalAhorroView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/totalConHipotecaValue"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/importeTotalView"
+        style="@style/MyTextViewStyle_2"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/total_hipoteca"
+        app:layout_constraintBottom_toBottomOf="@id/interesTotalView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/totalHipotecaValue"
+        app:layout_constraintTop_toTopOf="@id/totalAhorroView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/totalHipotecaValue"
+        style="@style/MyTextStyle_2"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="32dp"
+        android:text="0 €"
+        app:layout_constraintBottom_toBottomOf="@id/totalInteresValue"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@id/importeTotalView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ahorroValue"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/interesTotalView"
+        style="@style/MyTextViewStyle_2"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/total_interes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/totalInteresValue"
+        app:layout_constraintTop_toTopOf="@id/importeTotalView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/totalInteresValue"
+        style="@style/MyTextStyle_2"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="32dp"
+        android:text="0 €"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@id/interesTotalView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/totalHipotecaValue"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

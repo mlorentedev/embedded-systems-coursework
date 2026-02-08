@@ -1,0 +1,20 @@
+<resources>
+    // Application strings
+    <string name="app_name">Hipoteca</string>
+    <string name="app_description">Calculadora Hipoteca</string>
+    // Main activity strings
+    <string name="precio">Precio Inmueble</string>
+    <string name="ahorro">Ahorro aportado</string>
+    <string name="interes">Tipo de interés</string>
+    <string name="plazo">Plazo</string>
+    <string name="calcular">Calcular</string>
+    // Operation activity strings
+    <string name="info">Información relativa a la hipoteca</string>
+    <string name="total_hipoteca">Importe de la hipoteca</string>
+    <string name="mensual">Cuota mensual</string>
+    <string name="total_compra">Coste total de la compra</string>
+    <string name="impuestos">Impuestos y gastos</string>
+    <string name="total">Coste total con hipoteca</string>
+    <string name="total_interes">Interés de la hipoteca</string>
+
+</resources>
