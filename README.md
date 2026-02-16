@@ -1,4 +1,4 @@
-# Embedded Systems Engineering
+# Embedded Systems Coursework
 
 Coursework projects from the **Master en Sistemas Electronicos e Inteligencia Artificial (MSEEI)** program.
 
